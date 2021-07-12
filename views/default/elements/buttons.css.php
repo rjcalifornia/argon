@@ -14,14 +14,27 @@
 
 /* Base */
 .elgg-button {
-	font-size: 14px;
-	font-weight: bold;
-	border-radius: 5px;
+	font-size: .875rem;
+    font-weight: 600;
+    line-height: 1.5;
+
+    display: inline-block;
+
+    padding: .625rem 1.25rem;
+
+    cursor: pointer;
+    -webkit-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    transition: color .15s ease-in-out, background-color .15s ease-in-out, border-color .15s ease-in-out, box-shadow .15s ease-in-out; 
+    text-align: center;
+    vertical-align: middle;
+
+    color: #525f7f;
+    border: 1px solid transparent;
+    border-radius: .25rem;
+    background-color: transparent;
 	width: auto;
-	padding: 2px 4px;
-	cursor: pointer;
-	box-shadow: 0px 1px 0px rgba(0, 0, 0, 0.40);
-	background-color: #ccc;
 }
 a.elgg-button {
 	padding: 3px 6px;
@@ -34,65 +47,60 @@ a.elgg-button {
 
 /* Submit: This button should convey, "you're about to take some definitive action" */
 .elgg-button-submit {
-	color: white;
-	text-shadow: 1px 1px 0px black;
-	text-decoration: none;
-	border: 1px solid #4690d6;
-	background: #4690d6 url(<?= elgg_get_simplecache_url("button_graduation.png"); ?>) repeat-x left 10px;
+	color: #fff;
+border-color: #11cdef;
+background-color: #11cdef;
+box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
 }
 
 .elgg-button-submit:hover,
 .elgg-button-submit:focus {
-	border-color: #0054a7;
-	text-decoration: none;
-	color: white;
-	background: #0054a7 url(<?= elgg_get_simplecache_url("button_graduation.png"); ?>) repeat-x left 10px;
+	background-color:#0da5c0;
+	border-color:#0da5c0;
+	box-shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08),0 0 0 0 rgba(17,205,239,.5)
 }
 
 /* Cancel: This button should convey a negative but easily reversible action (e.g., turning off a plugin) */
 .elgg-button-cancel {
-	color: #333;
-	background: #ddd url(<?= elgg_get_simplecache_url("button_graduation.png"); ?>) repeat-x left 10px;
-	border: 1px solid #999;
+	color: #fff;
+border-color: #fb6340;
+background-color: #fb6340;
+box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
 }
 .elgg-button-cancel:hover,
 .elgg-button-cancel:focus {
-	color: #444;
-	background-color: #999;
-	background-position: left 10px;
-	text-decoration: none;
+	color: #fff;
+border-color: #ec0c38;
+background-color: #ec0c38;
+box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
 }
 
 /* Action: This button should convey a normal, inconsequential action, such as clicking a link */
 .elgg-button-action {
-	background: #ccc url(<?= elgg_get_simplecache_url("button_background.gif"); ?>) repeat-x 0 0;
-	border:1px solid #999;
-	color: #333;
-	padding: 2px 15px;
-	text-align: center;
-	font-weight: bold;
-	text-decoration: none;
-	text-shadow: 0 1px 0 white;
-	cursor: pointer;
-	border-radius: 5px;
-	box-shadow: none;
+	font-size: .875rem;
+position: relative;
+transition: all .15s ease;
+letter-spacing: .025em;
+text-transform: none; 
+
+color: #212529;
+border-color: #f7fafc;
+background-color: #f7fafc;
+box-shadow: 0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08);
 }
 
 .elgg-button-action:hover,
 .elgg-button-action:focus {
-	background: #ccc url(<?= elgg_get_simplecache_url("button_background.gif"); ?>) repeat-x 0 -15px;
+	background: #d2e3ee;
 	color: #111;
 	text-decoration: none;
-	border: 1px solid #999;
+	border-color: #f7fafc;
 }
 
 /* Delete: This button should convey "be careful before you click me" */
 .elgg-button-delete {
-	color: #bbb;
-	text-decoration: none;
-	border: 1px solid #333;
-	background: #555 url(<?= elgg_get_simplecache_url("button_graduation.png"); ?>) repeat-x left 10px;
-	text-shadow: 1px 1px 0px black;
+	
+	color:#fff;border-color:#f5365c;background-color:#f5365c;box-shadow:0 4px 6px rgba(50,50,93,.11),0 1px 3px rgba(0,0,0,.08)
 }
 .elgg-button-delete:hover,
 .elgg-button-delete:focus {

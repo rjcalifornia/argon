@@ -222,6 +222,7 @@ margin-bottom: 8px
 		min-height: 0 !important;
 		width: 100%;
 	}
+	
 	.elgg-module-widget {
 		margin: 0 0 15px;
 	}
@@ -337,10 +338,15 @@ margin-bottom: 8px
 	}
 	.elgg-menu-entity > li, .elgg-menu-annotation > li {
 		margin-left: 0;
-		margin-right: 15px;
+		margin-right: 10px;
 	}
 	.elgg-subtext {
 		float: left;
 		margin-right: 15px;
 	}
+}
+
+.center {
+    
+    transform: translateX(-0%) !important;
 }

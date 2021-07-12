@@ -24,6 +24,21 @@
 		<priority>after</priority>
 		<plugin>profile</plugin>
 	</requires>
+	<requires>
+		<type>plugin</type>
+		<name>site_notifications</name>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>messages</name>
+	</requires>
+
+	<requires>
+		<type>plugin</type>
+		<name>search</name>
+	</requires>
+
 	<activate_on_install>false</activate_on_install>
 </plugin_manifest>
 

@@ -21,7 +21,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <meta name="description" content="Start your development with a Dashboard for Bootstrap 4.">
   <meta name="author" content="Creative Tim">
-  <title>{{data.site_info.name}}</title>
+  <title>{{data.page_title}} | {{data.site_info.name}}</title>
   <!-- Favicon -->
   {{data.header|raw }}
   <link rel="icon" href="{{data.site_url}}mod/argon/assets/img/brand/favicon.png" type="image/png">
@@ -56,19 +56,19 @@
         <div class="header-body">
           <div class="row align-items-center py-4">
             <div class="col-lg-6 col-7">
-              <h6 class="h2 text-white d-inline-block mb-0">Default</h6>
+               
               <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                 <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
-                  <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                  <li class="breadcrumb-item"><a href="#">Dashboards</a></li>
-                  <li class="breadcrumb-item active" aria-current="page">Default</li>
+                  <li class="breadcrumb-item"><a href="{{data.site_url}}"><i class="fas fa-home"></i></a></li>
+                 {# <li class="breadcrumb-item"><a href="#">Dashboards</a></li>#}
+                  <li class="breadcrumb-item active" aria-current="page">{{data.page_title}}</li>
                 </ol>
               </nav>
             </div>
-            <div class="col-lg-6 col-5 text-right">
+            {#<div class="col-lg-6 col-5 text-right">
               <a href="#" class="btn btn-sm btn-neutral">New</a>
               <a href="#" class="btn btn-sm btn-neutral">Filters</a>
-            </div>
+            </div>#}
           </div>
           </div>
           </div>
@@ -131,15 +131,16 @@
   <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
     {%for key,value in data.messages %}
+    
 
     <script>
         $(document).ready(function(){
             Swal.fire({
             position: 'top-end',
-            icon: 'success',
+            icon: '{{key}}',
             title: '{{value[0]}}',
             showConfirmButton: false,
-            timer: 1500
+            timer: 1850
             });
         });
     </script>

@@ -120,21 +120,39 @@
 }
 
 .elgg-module-widget {
-	background-color: #dedede;
+	 
+
+flex-direction: column;
+min-width: 0;
+word-wrap: break-word;
+border: 1px solid rgba(0,0,0,.05);
+border-radius: .375rem;
+background-color: #fff;
+background-clip: border-box;
 	padding: 2px;
 	margin: 0 5px 15px;
 	position: relative;
+	margin-bottom: 30px;
+border: 0;
+box-shadow: 0 0 2rem 0 rgba(136,152,170,.15);
 }
 .elgg-module-widget:hover {
-	background-color: #ccc;
+	background-color: #fff;
 }
 .elgg-module-widget > .elgg-head {
-	background-color: #eeeeee;
+	background-color: #fff;
 	height: 26px;
-	overflow: hidden;
+	
+}
+
+
+.elgg-module-widget > .elgg-head:hover {
+	background-color: #fff;
+	
+	
 }
 .elgg-module-widget > .elgg-head h3 {
-	float: left;
+	
 	padding: 4px 45px 0 20px;
 	color: #666;
 }
@@ -159,7 +177,7 @@ a.elgg-widget-collapsed:before {
 	background-color: white;
 	width: 100%;
 	overflow: hidden;
-	border-top: 2px solid #dedede;
+	 
 }
 .elgg-widget-edit {
 	display: none;

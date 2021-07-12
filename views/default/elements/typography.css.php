@@ -11,6 +11,44 @@
 /* ***************************************
 	Typography
 *************************************** */
+
+
+.ni-elgg-bookmarks::before {
+    content: "\ea14";
+}
+
+.ni-elgg-activity::before {
+    content: "\ea50";
+}
+
+.ni-elgg-blog::before {
+    content: "\ea4f";
+}
+
+.ni-elgg-thewire::before {
+    content: "\ea4b";
+}
+
+.ni-elgg-dashboard::before {
+    content: "\ea08";
+}
+
+.ni-elgg-file::before {
+    content: "\ea09";
+}
+
+.ni-elgg-groups::before {
+    content: "\ea15";
+}
+
+.ni-elgg-members::before {
+    content: "\ea0b";
+}
+
+.ni-elgg-pages::before {
+    content: "\ea60";
+}
+
 body {
 	font-size: 80%;
 	line-height: 1.4em;

@@ -19,6 +19,8 @@ function argon_theme_init() {
 	
 	elgg_register_plugin_hook_handler('head', 'page', 'argon_theme_setup_head');
 
+	elgg_unextend_view('page/elements/sidebar', 'search/header', 0);
+
 	// non-members do not get visible links to RSS feeds
 	if (!elgg_is_logged_in()) {
 		elgg_unregister_plugin_hook_handler('output:before', 'layout', 'elgg_views_add_rss_link');

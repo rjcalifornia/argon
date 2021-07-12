@@ -444,6 +444,21 @@
 	line-height: 16px;
 	height: 16px;
 }
+
+@media (max-width: 600px) {
+	.elgg-menu-entity, .elgg-menu-annotation {
+	float: right;
+	margin-left: 15px;
+	font-size: 90%;
+	color: #aaa;
+	line-height: 16px;
+	height: 36px;
+}
+.elgg-subtext{
+	height: 6px;
+
+}
+}
 .elgg-menu-entity > li, .elgg-menu-annotation > li {
 	margin-left: 15px;
 }
