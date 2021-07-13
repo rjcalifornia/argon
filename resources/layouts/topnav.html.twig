@@ -17,6 +17,7 @@
             </button>
           </form>
           <!-- Navbar links -->
+            {% if data.logged_user == true %}
           <ul class="navbar-nav align-items-center  ml-md-auto ">
             <li class="nav-item d-xl-none">
               <!-- Sidenav toggler -->
@@ -76,6 +77,7 @@
             </li>
              
           </ul>
+          {%endif%}
           <ul class="navbar-nav align-items-center  ml-auto ml-md-0 ">
                {% if data.logged_user == true %}
             <li class="nav-item dropdown">

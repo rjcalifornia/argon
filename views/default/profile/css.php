@@ -61,7 +61,11 @@ color: #5e72e4;
     font-size: 1rem;
 font-weight: 300;
 line-height: 1.7;
-color: #f5f6f5 !important;
+color: #f5f6f5 ;
+}
+
+.blog-post p	{
+	color: #525f7f;
 }
 
 #profile-details {
