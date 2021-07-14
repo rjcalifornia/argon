@@ -157,3 +157,8 @@ color: #f5f6f5 ;
 .profile-banned-user h4 {
 	color: #B94A48;
 }
+
+
+ .elgg-comments .elgg-inner p{
+color: #525f7f !important;
+}
