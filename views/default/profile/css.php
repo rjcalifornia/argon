@@ -64,6 +64,7 @@ line-height: 1.7;
 color: #f5f6f5 ;
 }
 
+
 .blog-post p	{
 	color: #525f7f;
 }
@@ -161,4 +162,8 @@ color: #f5f6f5 ;
 
  .elgg-comments .elgg-inner p{
 color: #525f7f !important;
+}
+
+.elgg-item .elgg-output p{
+    color: #525f7f !important;
 }
